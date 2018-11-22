@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ToyBabySitter</string>
+    <string-array name="sex_array">
+        <item>daddy</item>
+        <item>momma</item>
+        <item>other</item>
+    </string-array>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="Are_you_sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="logout">logout</string>
+    <string name="export_prompt1">Do you want to export log excel file to</string>
+    <string name="export_prompt2">Do you want to export photo to</string>
+    <string name="account">ACCOUNT</string>
+    <string name="nickname">NICKNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="updatepassword">change Password</string>
+    <string name="checkpassword">CONFIRM PASSWORD</string>
+    <string name="gender">GENDER</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Modified_successfully">Modified successfully</string>
+    <string name="Modified_failure">Modified failure</string>
+    <string name="Please_check_your_network">Please check your network</string>
+    <string name="Please_select_year_and_month">Please select year and month</string>
+    <string name="Save_successfully">Save successfully</string>
+    <string name="Delete_successfully">Delete successfully</string>
+    <string name="Original_incorrect">Original password is incorrect.
+ Please try again.</string>
+    <string name="nPw_different_from_oPw">The new password must be different from old password.</string>
+    <string name="Password_not_match">Password doesn\'t match</string>
+    <string name="Can_not_be_blank">Can\t be blank.</string>
+    <string name="length_too_short">At most 10 lengths.</string>
+    <string name="connected">connected!!</string>
+    <string name="connected_failure">connection timeout or firewall problems</string>
+    <string name="content_empty">content empty</string>
+    <string name="failure">failure</string>
+    <string name="Image_file_storage_error">Image file storage error</string>
+    <string name="Log_failure">Repeat log in or log in timeout</string>
+    <string name="Please_fill_in_correctly">Please fill in correctly.</string>
+    <string name="Please_enter_your_nickname">Please enter your nickname</string>
+
+
+    <string name="mApp_Information">App Information</string>
+    <string name="mApp_Name">App Name：</string>
+    <string name="App_Name">Toy BabySitter</string>
+    <string name="mapp_developer">Developers：</string>
+    <string name="app_developer">賴敬涵 Reila Lai\n陳彥廷 Oscar Chen\n廖翼瑄 Sandy Liao</string>
+    <string name="mProduct_Description">Product Description：</string>
+    <string name="Product_Description">The ToyBabySitter is a toy combined with the mobile phone app. Featuring monitoring, GPS, Alexa voice assistant, log records and many other features.\n\nUser can register own account in our App. After log in, app is ready to conect the ToyBabySitter, every function are controled by app. While children play with it, parents can see the child\'s real-time images through App. With accessory device, Parents can use the gps system on the app to know the child’s location. Using the Alexa voice assistant and the logging feature, parents can fully record their child's growth path.</string>
+
+    <string name="Message">Message</string>
+    <string name="Are_you_sure_to_delete_this_journal">Are you sure to delete this journal?</string>
+    <string name="Are_you_sure_to_save_this_journal">Are you sure to save this journal?</string>
+    <string name="Are_you_sure_to_leave_this_journal">Are you sure to leave this journal?</string>
+
+    <string name="Change_Password">Change Password</string>
+    <string name="Please_enter_your_original_password">Please enter your original password</string>
+    <string name="Please_enter_your_new_password">Please enter your new password</string>
+    <string name="Confirm_new_password">Confirm new password</string>
+
+</resources>

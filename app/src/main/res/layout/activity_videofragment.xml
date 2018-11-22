@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <ImageView
+        android:id="@+id/error_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/error_img"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_cut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截圖"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

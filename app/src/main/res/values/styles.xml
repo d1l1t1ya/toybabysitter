@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- EditText 樣式 -->
+    <style name="EditTextStyle" parent="Base.Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/edit_text_normal_color</item>
+        <item name="colorControlActivated">@color/edit_text_activated_color</item>
+    </style>
+    <style name="AppTheme.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popview_out_amin</item>
+        <item name="android:windowExitAnimation">@anim/popview_in_amin</item>
+    </style>
+</resources>

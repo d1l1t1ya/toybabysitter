@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".SignPage">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    android:background="@drawable/person"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="0dp"
+                    android:text="@string/account"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/accounterr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/error_color"
+                android:textSize="12dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"
+                    android:background="@android:drawable/ic_lock_lock"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center"
+                    android:paddingBottom="0dp"
+                    android:text="@string/password"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:inputType="textPassword"/>
+        <TextView
+            android:id="@+id/passerr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:textSize="12dp"
+            android:textColor="@color/error_color"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:background="@android:drawable/ic_lock_lock"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="@string/checkpassword"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edt_checkpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:inputType="textPassword"/>
+        <TextView
+            android:id="@+id/checkpasserr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/error_color"
+            android:textSize="12dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:background="@drawable/gender"
+                android:backgroundTint="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="@string/gender"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/sex_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="cancel"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="bottom"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="confirm"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

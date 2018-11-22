@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/Head_portrait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/date_defore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/arrow"
+                android:rotation="180" />
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-08-30"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"/>
+            <ImageButton
+                android:id="@+id/date_front"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/arrow" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_below="@+id/btn_search"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/note_bg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="180dp">
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/write" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/top_picture"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/top_picture" />
+    <!--
+        <ImageButton
+            android:id="@+id/btn_project"
+            android:layout_width="105.5dp"
+            android:layout_height="95.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btn_gps"
+            android:background="@drawable/btn_02" />
+        -->
+    <ImageView
+    android:id="@+id/btn_search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/date_layout"
+    android:layout_alignTop="@+id/date_layout"
+    android:src="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/btn_gps"
+        android:layout_width="105.5dp"
+        android:layout_height="95.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/btn_03" />
+
+    <ImageButton
+        android:id="@+id/btn_video"
+        android:layout_width="105.5dp"
+        android:layout_height="95.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="59dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/edit_text_activated_color" />
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setting"
+            android:backgroundTint="@color/edit_text_activated_color"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/Head_portrait"
+        android:layout_width="35pt"
+        android:layout_height="35pt"
+        android:layout_marginTop="2pt"
+        app:srcCompat="@drawable/head_portrait1"
+        android:layout_alignLeft="@+id/frame"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/frame"/>
+
+    <ImageView
+        android:id="@+id/frame"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/top_picture"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/frame" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Head_portrait"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
